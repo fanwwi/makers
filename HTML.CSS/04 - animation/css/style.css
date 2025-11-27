@@ -1,0 +1,69 @@
+
+body {
+    background-color: #e5ff00;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubble {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+}
+
+@keyframes animateBubble {
+    from {
+        margin-top: 1000px;
+    }
+    to {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sideWays {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 50px;
+    }
+}
+
+.x1 {
+    animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out alternate infinite;
+    left: 30%;
+    top: 5%;
+    transform: scale(0.6);
+}
+
+.x2 {
+    animation: animateBubble 12s linear infinite, sideWays 4s ease-in-out alternate infinite;
+    right: 16%;
+    top: 1%;
+    transform: scale(1);
+}
+
+.x3 {
+    animation: animateBubble 15s linear infinite, sideWays 8s ease-in-out alternate infinite;
+    left: 20%;
+    top: 5%;
+    transform: scale(0.8);
+}
+
+.x4 {
+    animation: animateBubble 18s linear infinite, sideWays 3s ease-in-out alternate infinite;
+    right: 10%;
+    top: 7%;
+    transform: scale(0.3);
+}
+
+.x5 {
+    animation: animateBubble 12s linear infinite, sideWays 10s ease-in-out alternate infinite;
+    left: 17%;
+    top: 6%;
+    transform: scale(0.3);
+}

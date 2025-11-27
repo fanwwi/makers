@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: var(--headers-family);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #19191b;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 50px;
+}
+
+/* navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #19191b;
+    z-index: 3;
+}
+.burger-menu {
+    display: none;
+}
+.burger-list {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    position: fixed;
+    background-color: #19191b;
+    width: 100%;
+    top: 48px;
+    z-index: 3;
+ }
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.navigation_item a{
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navigation_item a:hover {
+    color: var(--primary-color);
+}
+.search input{
+    background: transparent;
+    border: 1px solid #fff;
+    color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* hero */
+
+.wrapper {
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+}
+.wrapper_left {
+    margin-top: 50px;
+}
+.wrapper_left h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.wrapper_left p {
+    font-size: var(--main-size);
+    line-height: 34px;
+}
+.action_btn {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: var(--main-size);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.wrapper_right {
+    width: 50%;
+    position: relative;
+}
+.right_icons {
+    position: absolute;
+}
+#vector-1 {
+    top: 60px;
+}
+#vector-2 {
+    top: 30px;
+    right: 0;
+}
+#vector-3 {
+    bottom: -55px;
+    left: -55px;
+}
+#vector-4 {
+    right: 0;
+    bottom: 0;
+}
+
+/* services */
+
+.services {
+    margin-top: 200px;
+    color: #fff;
+}
+.section_title {
+    font-size: var(--section-title-size);
+    color: #fff;
+}
+.services .section_title {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+.services_list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 120;
+}
+.services_list_item {
+    max-width: 300px;
+    margin: 40px;
+    text-align: center;
+}
+.item_title {
+    font-size: 28px;
+    font-weight: 600;
+}
+.item_description {
+    color: var(--secondary-color);
+}
+
+/* portfolio */
+
+.portfolio {
+    margin-top: 50px;
+}
+.portfolio_list {
+    display: flex;
+    margin-top: 50px;
+}
+.portfolio_list_item_second {
+    margin-top: 50px;
+}
+.portfolio_list_item_third {
+    margin-top: 100px;
+}
+.portfolio_list div {
+    width: 35%;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.dots_item {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+}
+.arrows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    display: none;
+}
+.arrows .active {
+    background-color: var(--primary-color);
+}
+.arrow {
+    width: 38px;
+    height: 38px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots .active {
+    width: 16px;
+    background-color: var(--primary-color);
+    border-radius: 35px;
+}
+
+/* contact us */
+
+.contact_us {
+    margin-top: 100px;
+}
+.contact_us h2 {
+    max-width: 800px;
+    margin-left: 70px;
+}
+.contact_us .wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_us .action_btn {
+    margin-top: -20px;
+    width: 150px;
+    height: 50px;
+    padding-left: 30px;
+    margin-right: 70px;
+}
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.site-data {
+    color: var(--secondary-color);
+}
